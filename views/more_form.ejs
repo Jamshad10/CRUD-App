@@ -1,0 +1,23 @@
+<%- include('layout/header') %>
+
+<div class="container w-50 h-50 align-item-center">
+   
+      <div class="card m-4"> 
+        <img src="/../<%= user.image %>" class="card-img-top img-thumbnail" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Name: <%= user.name %>
+          </h5>
+          <h5 class="card-title">Email: <%= user.email %>
+          </h5>
+          <h5 class="card-title">Phone: <%= user.phone %>
+          </h5>
+          <h5 class="card-title">Standard: <%= user.standard %>
+          </h5>
+          
+          <a href="/edit/<%= user._id  %>" class="text-success"><i class="fas fa-edit fa-lg mx-1"></i></a>
+          <a href="/delete/<%= user._id  %>" class="text-danger"><i class="fas fa-trash fa-lg mx-1"></i></a>
+          
+        </div>
+      </div>
+    
+  </div>
